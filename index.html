@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <meta charset="UTF-8" />
     <title>Government Scheme Chatbot</title>
-</head>
-<body style="text-align:center; margin-top:50px;">
 
+    <!-- Dialogflow Messenger CSS + JS -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  </head>
+
+  <body>
     <h2>Government Scheme Chatbot</h2>
 
-    <iframe
-        height="430"
-        width="350"
-        allow="microphone;"
-        src="https://bot.dialogflow.com/54cd1a4e-3337-4b8d-bb81-226a3d396a9c">
-    </iframe>
+    <!-- Dialogflow Messenger Component -->
+    <df-messenger
+      chat-title="Govt Scheme Bot"
+      agent-id="54cd1a4e-3337-4b8d-bb81-226a3d396a9c"
+      language-code="en"
+    ></df-messenger>
 
-</body>
+  </body>
 </html>
